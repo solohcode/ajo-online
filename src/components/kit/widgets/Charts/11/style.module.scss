@@ -1,0 +1,35 @@
+@import 'components/mixins.scss';
+
+.chartContainer {
+  // height: 50%;
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  bottom: 0 !important;
+  right: 0;
+}
+
+.chart {
+  // height: 200px;
+  padding: 0px;
+
+  :global(.ct-line) {
+    stroke-width: 1px;
+  }
+
+  :global(.ct-point) {
+    stroke-width: 5px;
+  }
+
+  :global(.ct-series-a) {
+    :global(.ct-area) {
+      fill: rgba(75, 124, 243, 0.1) !important;
+      fill-opacity: 1 !important;
+    }
+
+    :global(.ct-line) {
+      stroke: #4b7cf3 !important;
+    }
+  }
+}
