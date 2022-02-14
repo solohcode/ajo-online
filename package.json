@@ -1,9 +1,9 @@
 {
-  "name": "norva",
+  "name": "ajo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "deploy": "npm run build && mv build/index.html build/200.html && surge build dev.norva.surge.sh",
+    "deploy": "npm run build && mv build/index.html build/200.html && surge build dev.ajo-online.surge.sh",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

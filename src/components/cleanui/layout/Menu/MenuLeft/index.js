@@ -279,7 +279,7 @@ const MenuLeft = ({
         <div className={style.logoContainer}>
           <div className={style.logo}>
             {/* <Avatar shape="circle" size="large" icon={<UserOutlined />} /> */}
-            <img alt='norva-logo' src='/resources/images/logo2.svg' width="100px" />
+            <img alt='ajo-logo' src='/resources/images/logo2.svg' width="100px" />
             {/* <div className={style.name}>{logo}</div> */}
           </div>
         </div>

@@ -62,7 +62,7 @@ const Layout = ({ user, children, location: { pathname, search } }) => {
 
   return (
     <Fragment>
-      <Helmet titleTemplate="Norva | %s" title="Fastest Crypto Exchange Platform" />
+      <Helmet titleTemplate="Ajo | %s" title="Safest Thrift Savings Management App " />
       {BootstrappedLayout()}
     </Fragment>
   )

@@ -51,9 +51,9 @@ const AuthLayout = ({
   //         >
   //           <div className={style.logoContainer}>
   //             <div className={style.logo}>
-  //               <img src="resources/images/logo.svg" className="mr-2" alt="Norva" />
+  //               <img src="resources/images/logo.svg" className="mr-2" alt="Ajo" />
   //               {/* <div className={style.name}>{logo}</div> */}
-  //               {logo === 'Norva Pro' && <div className={style.descr}>React</div>}
+  //               {logo === 'Ajo Pro' && <div className={style.descr}>React</div>}
   //             </div>
   //           </div>
   //           <div className="d-none d-sm-block">

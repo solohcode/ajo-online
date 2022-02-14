@@ -13,7 +13,7 @@ const STORED_SETTINGS = storedSettings => {
 const initialState = {
   ...STORED_SETTINGS({
     authProvider: 'jwt', // firebase, jwt
-    logo: 'Norva',
+    logo: 'Ajo',
     locale: 'en-US',
     isSidebarOpen: false,
     isSupportChatOpen: false,

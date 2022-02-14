@@ -9,7 +9,7 @@ import Layout from 'layouts'
 const routes = [
   {
     path: '/',
-    Component: lazy(() => import('pages/norva/home')),
+    Component: lazy(() => import('pages/user/home')),
     exact: true,
   },
   {

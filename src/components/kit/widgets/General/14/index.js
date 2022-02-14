@@ -11,7 +11,7 @@ const General14 = () => {
             <div className={style.message}>
               <div className={style.messageContent}>
                 <div className="text-gray-4 font-size-12 text-uppercase">You, 5 min ago</div>
-                <div>Hi! Anyone here? I want to know how I can buy Norva KIT Pro?</div>
+                <div>Hi! Anyone here? I want to know how I can buy Ajo KIT Pro?</div>
               </div>
               <div className={`${style.messageAvatar} kit__utils__avatar`}>
                 <img src="resources/images/avatars/avatar-2.png" alt="You" />
