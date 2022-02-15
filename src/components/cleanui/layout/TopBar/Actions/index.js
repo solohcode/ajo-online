@@ -17,7 +17,7 @@ const Actions = () => {
     <Dropdown overlay={menu} trigger={['click']} placement="bottomRight">
       <div className={`${styles.dropdown}`}>
         <div className=''>
-          <Badge dot>
+          <Badge dot color="blue" offset={[,20]}>
             <i className={`${styles.icon} fe fe-bell`} />
           </Badge>
         </div>

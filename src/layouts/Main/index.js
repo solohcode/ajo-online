@@ -45,7 +45,7 @@ const MainLayout = ({
         })}
       >
         {/* <Sidebar /> */}
-        <SupportChat />
+        {/* <SupportChat /> */}
         <Menu />
         <Layout>
           <Layout.Header

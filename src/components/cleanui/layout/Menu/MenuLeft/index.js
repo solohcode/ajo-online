@@ -12,7 +12,11 @@ import {
   UserSwitchOutlined, 
   InfoCircleOutlined, 
   // TeamOutlined, 
-  BookOutlined } from '@ant-design/icons'
+  BookOutlined, 
+  DashboardOutlined,
+  GroupOutlined,
+  SwapOutlined,
+  TeamOutlined} from '@ant-design/icons'
 import classNames from 'classnames'
 import store from 'store'
 import PerfectScrollbar from 'react-perfect-scrollbar'
@@ -186,67 +190,78 @@ const MenuLeft = ({
       id: 0,
       title: 'Menu',
       url: false,
-      icon: false
+      icon: false,
+      key: ''
     },
     {
       id: 1,
       title: 'Dashboard',
       url: '/dashboard',
-      icon: <HomeOutlined />
+      icon: <DashboardOutlined />,
+      key: 'dashboard'
     },
     {
       id: 2,
-      title: 'Portfolio',
-      url: '/portfolio',
-      icon: <WalletOutlined />
+      title: 'Profile',
+      url: '/profile',
+      icon: <UserOutlined />,
+      key: 'profile'
     },
     {
       id: 3,
-      title: 'POS Agents',
-      url: '/agents',
-      icon: <MessageOutlined />
-    },
-    {
-      id: 4,
-      title: 'Market',
-      url: '/market',
-      icon: <BookOutlined />
+      title: 'Groups',
+      url: '/groups',
+      icon: <TeamOutlined />,
+      key: 'groups'
     },
     // {
-    //   id: 5,
-    //   title: 'Referrals',
-    //   url: '/referrals',
-    //   icon: <UserSwitchOutlined />
+    //   id: 4,
+    //   title: 'Market',
+    //   url: '/market',
+    //   icon: <BookOutlined />,
+    //   key: 'market'
     // },
+    {
+      id: 5,
+      title: 'Transactions',
+      url: '/transactions',
+      icon: <SwapOutlined />,
+      key: 'transaction'
+    },
     {
       id: 6,
       title: 'More',
       url: false,
-      icon: false
+      icon: false,
+      key: ''
     },
     {
       id: 7,
       title: 'Settings',
       url: '/settings',
-      icon: <SettingOutlined />
+      icon: <SettingOutlined />,
+      key: 'settings'
     },
-    {
-      id: 8,
-      title: 'Refer & Earn',
-      url: '/refer',
-      icon: <UserSwitchOutlined />
-    },
-    {
-      id: 9,
-      title: 'Account',
-      url: '/account',
-      icon: <UserOutlined />
-    },
+    // {
+    //   id: 8,
+    //   title: 'Refer & Earn',
+    //   url: '/refer',
+    //   icon: <UserSwitchOutlined />,
+    //   key: 'refer'
+    // },
+    // {
+    //   id: 9,
+    //   title: 'Account',
+    //   url: '/account',
+    //   icon: <UserOutlined />,
+    //   key: 'account'
+    // },
     {
       id: 10,
       title: 'Help',
       url: '/help',
-      icon: <InfoCircleOutlined />
+      icon: <InfoCircleOutlined />,
+      key: 'help'
     },
   ];
 
@@ -279,7 +294,7 @@ const MenuLeft = ({
         <div className={style.logoContainer}>
           <div className={style.logo}>
             {/* <Avatar shape="circle" size="large" icon={<UserOutlined />} /> */}
-            <img alt='ajo-logo' src='/resources/images/logo2.svg' width="100px" />
+            <img alt='ajo-logo' src='/resources/images/logos/logo.png' width="70%" />
             {/* <div className={style.name}>{logo}</div> */}
           </div>
         </div>

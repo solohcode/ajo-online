@@ -21,7 +21,7 @@ const TopBar = () => {
         <FavPages />
       </div> */}
       <div className="mr-auto px-lg-5">
-        <Search />
+        {/* <Search /> */}
         {/* <p className="m-0 fw-bold fs-5 text-capitalize">{path}</p> */}
       </div>
       <div className="mr-4 d-none d-md-block">
@@ -34,13 +34,13 @@ const TopBar = () => {
         {/* <LanguageSwitcher />   */}
       </div>
       <div className="mr-4 d-none d-sm-block">
-        <i class="fa fa-moon-o fs-4 cursor-pointer" aria-hidden="true"></i>
-      </div>
-      <div className="mr-4">
-        <UserMenu />
+        {/* <i class="fa fa-moon-o fs-4 cursor-pointer" aria-hidden="true"></i> */}
       </div>
       <div className="mr-4 d-none d-sm-block">
         <Actions />
+      </div>
+      <div className="mr-4">
+        <UserMenu />
       </div>
     </div>
   )
