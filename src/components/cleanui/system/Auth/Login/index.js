@@ -9,7 +9,7 @@ const mapStateToProps = ({ user, settings, dispatch }) => ({
 })
 
 const Login = (
-  // { dispatch, user, logo }
+  // { dispatch, user, logo }`
   ) => {
  
 

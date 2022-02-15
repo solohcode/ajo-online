@@ -9,7 +9,6 @@ const Index = () => {
     <>
       <Helmet title="Home" />
       <h1>hello world from home page</h1>
-      {/* <Footer /> */}
     </>
   )
 }
