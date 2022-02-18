@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.body{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), 
+    url('https://worldmapwithcountries.net/wp-content/uploads/2018/07/map1.jpg');
+    background-size: cover;
+    background-position: top; 
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.bodyText{
+    position: absolute;
+}
+
+.thinkText{    
+    width: 60%;
+    font-family: 'Lobster', cursive;
+    margin-left: 30px;
+    font-size: 50px;
+}
+.theSmart{
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.bb{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 575.98px) {
+    .display-1 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.0;
+    }
+    
+        .display-2 {
+            font-size: 2.75rem;
+            font-weight: 300;
+            line-height: 1.0;
+        }
+    
+        .display-3 {
+            font-size: 2.25rem;
+            font-weight: 300;
+            line-height: 1.0;
+        }
+    
+        .display-4 {
+            font-size: 1.75rem;
+            font-weight: 300;
+            line-height: 1.0;
+        }
+        .thinkText{    
+            width: 70%;
+            font-family: 'Lobster', cursive;
+            margin-left: 0px;
+            font-size: 30px;
+        }
+        .theSmart{
+            font-family: 'Roboto', sans-serif;
+            width: 80%;
+            margin-left: 0px;
+            font-size: 10px;
+        }
+        .bb{
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+    }

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+.theStacks{
+    font-family: 'Lobster', cursive;
+}
+.toBlue{
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+}
+.blueImage{
+    width: 100%;
+    height: 100%;
+}
+.toDown{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    width: 90%;
+}
+.goDown{
+    margin-top: 90px;
+}

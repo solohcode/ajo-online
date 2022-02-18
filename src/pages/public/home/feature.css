@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.horizontalLine{
+    border-top: 1px solid;
+}
+.theStacks{
+    font-family: 'Lobster', cursive;
+}
+.card{
+width: 100%;
+height: 100%;
+/* display: flex;
+align-items: center;
+flex-direction: column ; */
+}
