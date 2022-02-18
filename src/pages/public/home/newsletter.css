@@ -2,8 +2,9 @@
 .label{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 28px;
     display: inline-block;
+    line-height: 50px;
 }
 .fullBody{
     background-color: blue;

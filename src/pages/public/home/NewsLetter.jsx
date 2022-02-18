@@ -6,7 +6,7 @@ const Newsletter = ()=>{
                 <p class="text-center text-white fw-bold pt-4 new">Subscribe to our Newsletter</p>
                 <label class="label me-1">Email: </label>
                 <p class="text-center btn-group">    
-                <input type="email" placeholder='Enter your email' class="rounded"/>
+                <input type="email" placeholder='Enter your email' class="rounded px-5 w-100"/>
                     <input type="submit" value="Subscribe" class="btn btn-outline-dark rounded"/>
                 </p>
             </form>
