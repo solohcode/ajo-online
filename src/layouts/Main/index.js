@@ -56,7 +56,7 @@ const MainLayout = ({
           >
             <TopBar />
           </Layout.Header>
-          <Breadcrumbs />
+          {/* <Breadcrumbs /> */}
           <Layout.Content style={{ height: '100%', position: 'relative' }}>
             <div className="cui__utils__content">{children}</div>
           </Layout.Content>

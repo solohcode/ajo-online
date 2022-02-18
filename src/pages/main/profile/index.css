@@ -1,0 +1,17 @@
+.users{
+    border:0px solid
+  }
+  .text{
+    text-align: left;
+  }
+  .con1{
+    text-align: left;
+    justify-content: center;
+    height: 70%;
+  }
+  .con2{
+    height: 70%;
+  }
+  .conc{
+    height: 95%;
+  }
