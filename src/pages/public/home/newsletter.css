@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-.label{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-    display: inline-block;
-    line-height: 50px;
-}
+
 .fullBody{
     background-color: blue;
     background-size: cover;
@@ -18,4 +12,15 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 30px;
+}
+
+
+input::-webkit-input-placeholder {
+    padding-left: 5px !important;
+    transform: translate3d(0, -4px, 0)
+}
+
+input::placeholder {
+    vertical-align: middle !important;
+    font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important
 }
