@@ -13,6 +13,4 @@ const Newsletter = ()=>{
             <img src="/resources/images/logos/logo-white.png" width="40%" class="mb-4" alt="White-logo"/>
     </div>);
 }
-export default Newsletter
-;
-
+export default Newsletter;
