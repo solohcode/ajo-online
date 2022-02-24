@@ -22,7 +22,11 @@ const routes = [
     Component: lazy(() => import('pages/main/profile')),
     exact: true,
   },
-
+  {
+    path: '/groups',
+    Component: lazy(() => import('pages/main/group')),
+    exact: true,
+  },
   {
     path: '/auth/login',
     Component: lazy(() => import('pages/auth/login')),

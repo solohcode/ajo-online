@@ -1,0 +1,22 @@
+#btn{
+    
+    width: 40px;
+    height: 25px;
+    display:inline-flex;
+    font-size: 10px;
+    
+}
+
+#all-menu{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+
+#table{
+    margin-top: 30px;
+}
