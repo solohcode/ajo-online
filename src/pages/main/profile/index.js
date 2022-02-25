@@ -42,16 +42,6 @@ export default class index extends Component {
                             </div>
                         </div>
                     </div>
-
-                    <div className='col-lg-6 col-md-12 col-sm-12'>
-                      <div className='mt-3 p-5 bg-white rounded con2'>
-
-                      </div>
-                    </div>
-
-                </div>
-
-                <div className='row p-2'>
                     <div className='col-lg-6 col-md-12 col-sm-12'>
                         <div className='mt-3 p-5 bg-white rounded conc3'>
                         <p className='text-center'>
@@ -79,14 +69,10 @@ export default class index extends Component {
                         </div>
                     </div>
 
-                    <div className='col-lg-6 col-md-12 col-sm-12'>
-                      <div className='mt-3 p-5 bg-white rounded conc'>
-
-                      </div>
-                    </div>
                 </div>
-      </div>
-    )
+    </div>
+    );
   }
 }
+
 
