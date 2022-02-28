@@ -18,6 +18,16 @@ const routes = [
     exact: true,
   },
   {
+    path: '/profile',
+    Component: lazy(() => import('pages/main/profile')),
+    exact: true,
+  },
+  {
+    path: '/groups',
+    Component: lazy(() => import('pages/main/group')),
+    exact: true,
+  },
+  {
     path: '/auth/login',
     Component: lazy(() => import('pages/auth/login')),
     exact: true,
@@ -25,6 +35,11 @@ const routes = [
   {
     path: '/auth/forgot-password',
     Component: lazy(() => import('pages/auth/forgot-password')),
+    exact: true,
+  },
+  {
+    path: '/auth/chnage-password',
+    Component: lazy(() => import('pages/auth/change-password')),
     exact: true,
   },
   {

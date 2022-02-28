@@ -1,0 +1,8 @@
+*{
+    list-style: none;
+}
+
+.nav-item a{
+    font-size: 18px;
+    line-height: 50px;
+}
