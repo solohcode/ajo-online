@@ -11,27 +11,19 @@ export default function Dashboard() {
         <div className="site-card-border-less-wrapper">
           <Card className='card' style={{ width: 250, display: 'block', height: '100px' }}>
             <div className='card-top-1'>Completed Savings</div>
-            <div className='texts'>
-              <h5><CheckCircleOutlined />003</h5>
-            </div>
+            <h5 className='texts'><CheckCircleOutlined />003</h5>
           </Card>
           <Card className='card' style={{ width: 250, display: 'block', height: '100px' }}>
             <div className='card-top-2'>Ongoing Savings</div>
-            <div className='texts'>
-              <h5><ClockCircleOutlined />005</h5>
-            </div>
+            <h5 className='texts'><ClockCircleOutlined />005</h5>
           </Card>
           <Card className='card' style={{ width: 250, display: 'block', height: '100px' }}>
             <div className='card-top-3'>Total Amount On App</div>
-            <div className='texts'>
-              <h5 className='middle' style={{paddingLeft: '20px'}}>#34,000,305</h5>
-            </div>
+            <h5 className='texts middle' >#34,000,246</h5>
           </Card>
           <Card className='card' style={{ width: 250, display: 'block', height: '100px' }}>
             <div className='card-top-4'>Groups</div>
-            <div className='texts'>
-              <h5><TeamOutlined />003</h5>
-            </div>
+            <h5 className='texts'><TeamOutlined />003</h5>
           </Card>
         </div>
         
@@ -68,32 +60,6 @@ export default function Dashboard() {
               </div>
             </Card>
           </div>
-
-            <Card className='card tong' style={{ width: '350px', height: '300px' }}>
-                <h4>In Progress</h4>
-              <div style={{ display: 'block', justifyContent: 'space-around' }}>
-                <div className='card-border'>
-                  <div className='card-border-1'>
-                    Notifications<h6 style={{ borderRadius: '10px', backgroundColor: 'green', width: '25px' }}>Low</h6>
-                  </div>
-                  <h6>Participant: King Arthur</h6>
-                  <h6>Dated added: 12/04/2021</h6>
-                </div>
-                <div  className='card-border'>
-                  <div className='card-border-1'>
-                  Task types<h6 style={{ borderRadius: '10px', backgroundColor: 'green', width: '25px' }}>Low</h6>
-                  </div>
-                  <h6>Participant: King Arthur</h6>
-                  <h6>Dated added: 12/04/2021</h6>
-                </div>
-              </div>
-            </Card>
-            <Card className='card tong' style={{ width: '350px', height: '300px' }}>
-                
-            </Card>
-        </div>
-
-        <div className="site-card-border-less-wrapper-2">
           <Card className='card' style={{ width: 620, height: '300px' }}>
             <div className='botn' style={{ display: 'flex', justifyContent: 'space-between' }}>
               <h4>Transactions</h4>
@@ -117,6 +83,28 @@ export default function Dashboard() {
                 <div className="col"><DeploymentUnitOutlined />12/04/2021</div>
                 <div className="col"><DeploymentUnitOutlined />12/04/2021</div>
                 <div className="col"><TeamOutlined />Adeniyi, Cole, Dave</div>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        <div className="site-card-border-less-wrapper-2">
+          <Card className='card tong' style={{ width: '350px', height: '300px' }}>
+            <h4>In Progress</h4>
+            <div style={{ display: 'block', justifyContent: 'space-around' }}>
+              <div className='card-border'>
+                <div className='card-border-1'>
+                  Notifications<h6 style={{ borderRadius: '10px', backgroundColor: 'green', width: '25px' }}>Low</h6>
+                </div>
+                <h6>Participant: King Arthur</h6>
+                <h6>Dated added: 12/04/2021</h6>
+              </div>
+              <div  className='card-border'>
+                <div className='card-border-1'>
+                Task types<h6 style={{ borderRadius: '10px', backgroundColor: 'green', width: '25px' }}>Low</h6>
+                </div>
+                <h6>Participant: King Arthur</h6>
+                <h6>Dated added: 12/04/2021</h6>
               </div>
             </div>
           </Card>
