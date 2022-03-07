@@ -56,6 +56,36 @@ export async function currentAccount() {
     .catch(err => console.log(err))
 }
 
+
+
+
+
+
+
+
+// test purposse >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+export async function getJsonPlaceholderData(id) {
+  return apiClient
+    .get(`/todos/${id}`)
+    .then(response => {
+      if (response) {
+        return response
+      }
+      return false
+    })
+    .catch(err => console.log(err))
+}
+
+
+
+
+
+
+
+
+
+
+
 export async function logout() {
   localStorage.removeItem("data");
     return true

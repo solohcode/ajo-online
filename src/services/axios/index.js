@@ -1,9 +1,11 @@
 import axios from 'axios'
 import store from 'store'
-import { notification } from 'antd'
+import {
+  notification
+} from 'antd'
 
 const apiClient = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://jsonplaceholder.typicode.com',
 })
 
 apiClient.interceptors.request.use(request => {
@@ -17,8 +19,12 @@ apiClient.interceptors.request.use(request => {
 
 apiClient.interceptors.response.use(undefined, error => {
   // Error handling
-  const { response } = error
-  const { data } = response
+  const {
+    response
+  } = error
+  const {
+    data
+  } = response
   if (data) {
     notification.warning({
       message: data,

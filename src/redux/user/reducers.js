@@ -8,6 +8,7 @@ const initialState = {
   avatar: '',
   authorized: process.env.REACT_APP_AUTHENTICATED || false, // false is default value
   loading: false,
+  placeholderData: {},
 }
 
 export default function userReducer(state = initialState, action) {

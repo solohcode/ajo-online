@@ -17,6 +17,7 @@ const mapAuthProviders = {
     register: jwt.register,
     currentAccount: jwt.currentAccount,
     logout: jwt.logout,
+    placeholderData: jwt.getJsonPlaceholderData
   },
 }
 
@@ -142,9 +143,41 @@ export function* LOGOUT() {
   })
 }
 
+
+
+
+
+// test saga >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.........
+export function* PLACEHOLDER_DATA({id}) {
+  yield put({
+    type: 'user/SET_STATE',
+    payload: {
+      dataLoading: true,
+    }
+  });
+  const success = yield call(mapAuthProviders.jwt.placeholderData, id );
+  if(success.status){
+    yield put({
+      type: 'user/SET_STATE',
+      payload: {
+        dataLoading: false,
+        placeholderData: success.data
+      },
+    });
+  }else{
+    yield put({
+      type: 'user/SET_STATE',
+      payload: {
+        dataLoading: false,
+      },
+    });
+  }
+}
+
 export default function* rootSaga() {
   yield all([
     takeEvery(actions.LOGIN, LOGIN),
+    takeEvery(actions.PLACEHOLDER_DATA, PLACEHOLDER_DATA),
     // takeEvery(actions.REGISTER, REGISTER),
     // takeEvery(actions.LOAD_CURRENT_ACCOUNT, LOAD_CURRENT_ACCOUNT),
     takeEvery(actions.LOGOUT, LOGOUT),

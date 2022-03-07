@@ -4,6 +4,7 @@ const actions = {
   REGISTER: 'user/REGISTER',
   LOAD_CURRENT_ACCOUNT: 'user/LOAD_CURRENT_ACCOUNT',
   LOGOUT: 'user/LOGOUT',
+  PLACEHOLDER_DATA: 'user/PLACEHOLDER_DATA',
 }
 
 export default actions
