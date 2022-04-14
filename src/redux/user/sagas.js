@@ -23,41 +23,35 @@ const mapAuthProviders = {
 
 export function* LOGIN({ payload }) {
   const { email, password } = payload
-  console.log(email)
   yield put({
     type: 'user/SET_STATE',
     payload: {
       loading: true,
     },
   })
-  const { authProvider: autProviderName } = yield select(state => state.settings)
-  const success = yield call(mapAuthProviders[autProviderName].login, email, password)
-  // console.log(success)
-  if (success) {
-    // yield put({
-    //   type: 'user/LOAD_CURRENT_ACCOUNT',
-    // })
-    localStorage.setItem("data", JSON.stringify(success.data));
-    yield history.push('/')
+  const success = yield call(mapAuthProviders.jwt.login , email, password)
+  if (success.success || success.status) {
+    localStorage.setItem("userData", JSON.stringify(success.data));
+    yield history.push('/dashboard')
     yield put({
       type: 'user/SET_STATE',
       payload: {
         authorized: true,
+        loading: false,
       },
     })
     notification.success({
       message: 'Logged In',
       description: success.message,
     })
-  }
-  if (!success) {
+  }else{
     yield put({
       type: 'user/SET_STATE',
       payload: {
         loading: false,
       },
     })
-    notification.success({
+    notification.warn({
       message: 'Logged In error occur',
       description: success.message,
     })

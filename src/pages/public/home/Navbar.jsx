@@ -1,6 +1,7 @@
 import React from 'react';
 import './navbar.css';
 import {UserOutlined, UserAddOutlined} from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 const Navbar = ()=>{
   return (<div>
  
@@ -29,8 +30,8 @@ const Navbar = ()=>{
         Authenticate
       </a>
       <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <li><a className="dropdown-item" href="#">
-        <span><span> <UserOutlined /></span> Sign In</span></a></li>
+        <li><Link to="/auth/login" className="dropdown-item" href="#">
+        <span><span> <UserOutlined /></span> Sign In</span></Link></li>
         <li><a className="dropdown-item" href="#">
         <span><span> <UserAddOutlined /></span> Sign Up</span></a></li>
       </ul>

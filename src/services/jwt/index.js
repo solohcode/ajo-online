@@ -4,13 +4,7 @@ import store from 'store'
 import { getConfig } from 'services/config/config'
 
 export async function login(email, password) {
-  return axios({
-    method: 'post',
-    url: getConfig("adminlogin"),
-    data: {
-      email,
-      password
-    }})
+  return apiClient.post('/auth/login', { email, password})
     .then(response => {
       if (response) {
         return response.data

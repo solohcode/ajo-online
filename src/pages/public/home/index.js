@@ -50,7 +50,7 @@ const Index = ({
   return (
     <div>
       <Helmet title="Home" />
-        <div>
+        {/* <div>
           <Card loading={loading}>
             <div className="card-body">
               <Input onChange={handleChange} type="number" size="large" />
@@ -59,7 +59,7 @@ const Index = ({
               <Button disabled={!id} className="btn btn-primary" onClick={handleBtn}>Get Data</Button>
             </div>
           </Card>
-        </div>
+        </div> */}
         <Navbar/>  
             <Map/>
               <TheStacks/>

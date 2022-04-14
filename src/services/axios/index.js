@@ -5,7 +5,7 @@ import {
 } from 'antd'
 
 const apiClient = axios.create({
-  baseURL: 'https://jsonplaceholder.typicode.com',
+  baseURL: 'http://137.184.148.224/ecommerce_test1/public/api',
 })
 
 apiClient.interceptors.request.use(request => {
