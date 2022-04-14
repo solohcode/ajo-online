@@ -28,6 +28,11 @@ const routes = [
     exact: true,
   },
   {
+    path: '/transactions',
+    Component: lazy(() => import('pages/main/transactions')),
+    exact: true,
+  },
+  {
     path: '/auth/login',
     Component: lazy(() => import('pages/auth/login')),
     exact: true,

@@ -4,6 +4,8 @@ import { history } from 'index'
 import * as firebase from 'services/firebase'
 import * as jwt from 'services/jwt'
 import actions from './actions'
+import store from 'store'
+
 
 const mapAuthProviders = {
   firebase: {
@@ -31,7 +33,9 @@ export function* LOGIN({ payload }) {
   })
   const success = yield call(mapAuthProviders.jwt.login , email, password)
   if (success.success || success.status) {
-    localStorage.setItem("userData", JSON.stringify(success.data));
+    localStorage.setItem("userData", JSON.stringify(success));
+    store.set('accessToken', success.token)
+  
     yield history.push('/dashboard')
     yield put({
       type: 'user/SET_STATE',

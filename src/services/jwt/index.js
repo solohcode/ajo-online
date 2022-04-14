@@ -34,9 +34,9 @@ export async function register(email, password, name) {
     .catch(err => console.log(err))
 }
 
-export async function currentAccount() {
+export async function   currentAccount() {
   return apiClient
-    .get('/auth/account')
+    .get('/savings_balance')
     .then(response => {
       if (response) {
         const { accessToken } = response.data
