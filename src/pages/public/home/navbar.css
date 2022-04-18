@@ -6,3 +6,25 @@
     font-size: 18px;
     line-height: 50px;
 }
+.round{
+    border-radius: 20px 20px 20px 20px;
+}
+@media only screen and (max-width: 600px) {
+    .round{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .round{
+        margin-left: auto;
+        margin-right: auto;
+        padding:0px;
+    }
+}
+.hamburger{
+    font-size: 30px;
+    line-height: 50px;
+}

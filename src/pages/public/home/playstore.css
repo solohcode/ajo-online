@@ -1,0 +1,10 @@
+.round{
+    border-radius: 30px 30px 30px 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .round{
+        width: 100%;
+        height: 100%;
+    }
+}

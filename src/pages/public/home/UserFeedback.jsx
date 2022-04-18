@@ -9,13 +9,13 @@ const UserFeedback = ()=>{
         <div id="carouselExampleControls" class="carousel slide container" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-          <div class="row">
+          <div class="row container">
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="/resources/images/users/user.jpg" class="w-75" alt="First slide"/>
+            <img src="/resources/images/users/user.jpg" class=" img-fluid rounded" alt="First slide"/>
           </div>            
           
           <div class="col-lg-6 col-md-6 col-sm-12 goDown">
-          <p class="toDown">With ajo online software i have been able to save money both individually and with my friends, 
+          <p class="toDown ms-auto me-auto">With ajo online software i have been able to save money both individually and with my friends, 
           as a student it has help me to manage my money, saving up for unsolicited events that could happen at any ungiven time, 
           and the pay out is so so stress free, I am giving a 10 out 0f 10, kudos to the developer.</p>
           </div>            
