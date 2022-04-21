@@ -1,0 +1,214 @@
+.site-card-border-less-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-top-1 {
+  position: absolute;
+  border-radius: 8px 25px 0px 8px;
+  background-color: rgb(19, 187, 108);
+  margin-top: -24px;
+  margin-left: 8px;
+  font-size: 12px;
+  color: white;
+  width: 135px;
+  padding-left: 5px;
+}
+
+.card-top-2 {
+  position: absolute;
+  border-radius: 10px 20px 0px 10px;
+  background-color: rgb(223, 212, 65);
+  margin-top: -24px;
+  margin-left: 12px;
+  font-size: 12px;
+  color: white;
+  width: 130px;
+  padding-left: 10px;
+}
+
+.card-top-3 {
+  position: absolute;
+  border-radius: 10px 23px 0px 10px;
+  background-color: rgb(31, 119, 201);
+  margin-top: -24px;
+  margin-left: 91px;
+  font-size: 12px;
+  color: white;
+  width: 138px;
+  padding-left: 5px;
+}
+
+.card-top-4 {
+  position: absolute;
+  border-radius: 10px 25px 0px 10px;
+  background-color: rgb(49, 170, 218);
+  margin-top: -24px;
+  margin-left: 73px;
+  font-size: 12px;
+  color: white;
+  width: 70px;
+  padding-left: 7px;
+}
+
+.site-card-border-less-wrapper .texts {
+  text-align: center;
+  padding-right: 70px;
+  margin-top: 20px;
+
+}
+
+.site-card-border-less-wrapper .texts h5 {
+  font-weight: 550;
+
+}
+
+.site-card-border-less-wrapper .card {
+  border-radius: 40px;
+  display: block;
+}
+
+.site-card-border-less-wrapper .card div {
+  float: right;
+}
+
+.site-card-border-less-wrapper-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.site-card-border-less-wrapper-1 .card {
+  border-radius: 15px;
+}
+
+.chard {
+  display: block;
+  justify-content: space-between;
+}
+
+.site-card-border-less-wrapper-2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.site-card-border-less-wrapper-2 .card {
+  border-radius: 15px;
+}
+
+h6 {
+  font-size: 11px;
+}
+
+.site-card-border-less-wrapper-2 .card .botn button {
+  border-radius: 10px;
+  height: 35px;
+  width: 120px;
+  background-color: rgb(41, 107, 212);
+  color: white;
+  border: none;
+}
+
+.card-border {
+  width: 97%;
+  height: 100px;
+  background-color: rgb(241, 238, 238);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.col {
+  font-size: 10px;
+}
+
+.row {
+  height: 50px;
+  width: 550;
+  background-color: gainsboro;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+/* .middle {
+  margin-left: 15px;
+} */
+
+
+@media screen and (max-width:800px) {
+  .car {
+    width: 200;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+
+  /* .middle {
+    margin-left: 70px;
+  } */
+  .card-top-1 {
+    position: absolute;
+    border-radius: 10px 25px 0px 10px;
+    background-color: rgb(19, 187, 108);
+    margin-top: -24px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: white;
+    width: 130px;
+    padding-left: 5px;
+  }
+
+  .card-top-2 {
+    position: absolute;
+    border-radius: 10px 20px 0px 10px;
+    background-color: rgb(223, 212, 65);
+    margin-top: -24px;
+    margin-left: 12px;
+    font-size: 12px;
+    color: white;
+    width: 130px;
+    padding-left: 10px;
+  }
+
+  .card-top-3 {
+    position: absolute;
+    border-radius: 10px 20px 0px 10px;
+    background-color: rgb(31, 119, 201);
+    margin-top: -24px;
+    margin-left: 75px;
+    font-size: 12px;
+    color: white;
+    width: 150px;
+    height: 20px;
+    padding-left: 5px;
+  }
+
+  .card-top-4 {
+    position: absolute;
+    border-radius: 10px 25px 0px 10px;
+    background-color: rgb(49, 170, 218);
+    margin-top: -24px;
+    margin-left: 72px;
+    font-size: 12px;
+    color: white;
+    width: 70px;
+    padding-left: 10px;
+  }
+
+  .chard {
+    display: block;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+
+  .tong {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+@media screen and (maw-width: 900px) {}

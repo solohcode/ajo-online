@@ -4,13 +4,7 @@ import store from 'store'
 import { getConfig } from 'services/config/config'
 
 export async function login(email, password) {
-  return axios({
-    method: 'post',
-    url: getConfig("adminlogin"),
-    data: {
-      email,
-      password
-    }})
+  return apiClient.post('/auth/login', { email, password})
     .then(response => {
       if (response) {
         return response.data
@@ -40,9 +34,9 @@ export async function register(email, password, name) {
     .catch(err => console.log(err))
 }
 
-export async function currentAccount() {
+export async function   currentAccount() {
   return apiClient
-    .get('/auth/account')
+    .get('/savings_balance')
     .then(response => {
       if (response) {
         const { accessToken } = response.data
@@ -55,6 +49,36 @@ export async function currentAccount() {
     })
     .catch(err => console.log(err))
 }
+
+
+
+
+
+
+
+
+// test purposse >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+export async function getJsonPlaceholderData(id) {
+  return apiClient
+    .get(`/todos/${id}`)
+    .then(response => {
+      if (response) {
+        return response
+      }
+      return false
+    })
+    .catch(err => console.log(err))
+}
+
+
+
+
+
+
+
+
+
+
 
 export async function logout() {
   localStorage.removeItem("data");

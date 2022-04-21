@@ -1,6 +1,11 @@
 import React from 'react';
 import './navbar.css';
+<<<<<<< HEAD
 import {UserOutlined, UserAddOutlined, PlusCircleFilled} from '@ant-design/icons';
+=======
+import {UserOutlined, UserAddOutlined} from '@ant-design/icons';
+import { Link } from 'react-router-dom';
+>>>>>>> 1354fde3b50a1ba59b1cf3ee9152045938cdbac6
 const Navbar = ()=>{
   
   return (<div>
@@ -30,11 +35,19 @@ const Navbar = ()=>{
       <a class="nav-link dropdown-toggle  round btn-primary text-center" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         Authenticate
       </a>
+<<<<<<< HEAD
       <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <li><a className="dropdown-item text-center" href="#">
           <span><span> <UserOutlined /></span> Sign In</span></a></li>
         <li><a className="dropdown-item text-center" href="#">
           <span><span> <UserAddOutlined /></span> Sign Up</span></a></li>
+=======
+      <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><Link to="/auth/login" className="dropdown-item" href="#">
+        <span><span> <UserOutlined /></span> Sign In</span></Link></li>
+        <li><a className="dropdown-item" href="#">
+        <span><span> <UserAddOutlined /></span> Sign Up</span></a></li>
+>>>>>>> 1354fde3b50a1ba59b1cf3ee9152045938cdbac6
       </ul>
     </li>
   </ul>

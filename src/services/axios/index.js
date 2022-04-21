@@ -1,12 +1,16 @@
 import axios from 'axios'
 import store from 'store'
-import { notification } from 'antd'
+import {
+  notification
+} from 'antd'
 
 const apiClient = axios.create({
-  baseURL: '/api',
+  baseURL: 'http://137.184.148.224/ecommerce_test1/public/api',
 })
 
 apiClient.interceptors.request.use(request => {
+  // const accessToken = JSON.parse(localStorage.getItem('userData'));
+  // console.log(accessToken)
   const accessToken = store.get('accessToken')
   if (accessToken) {
     request.headers.Authorization = `Bearer ${accessToken}`
@@ -17,8 +21,12 @@ apiClient.interceptors.request.use(request => {
 
 apiClient.interceptors.response.use(undefined, error => {
   // Error handling
-  const { response } = error
-  const { data } = response
+  const {
+    response
+  } = error
+  const {
+    data
+  } = response
   if (data) {
     notification.warning({
       message: data,

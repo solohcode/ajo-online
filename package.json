@@ -30,7 +30,7 @@
     ]
   },
   "dependencies": {
-    "@ant-design/icons": "^4.2.2",
+    "@ant-design/icons": "^4.7.0",
     "@mui/icons-material": "^5.2.5",
     "antd": "^4.6.3",
     "axios": "^0.19.2",

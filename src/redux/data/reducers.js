@@ -1,14 +1,8 @@
 import actions from './actions'
 
 const initialState = {
-  id: '',
-  name: '',
-  role: '',
-  email: '',
-  avatar: '',
-  authorized: process.env.REACT_APP_AUTHENTICATED || false, // false is default value
   loading: false,
-  placeholderData: {},
+  savings_balance: 0
 }
 
 export default function userReducer(state = initialState, action) {
